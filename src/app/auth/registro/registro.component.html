@@ -1,0 +1,90 @@
+<html>
+
+<body>
+    <div id="box">
+        <div id="main"></div>
+        <div id="signupform">
+            <h1>CREAR CUENTA</h1>
+            <form #frmRegistro="ngForm" (ngSubmit)="onRegister(frmRegistro)">
+                <input type="text" name="name" placeholder="Nombre" ngModel required/><br>
+                <input type="email" name="email" placeholder="Correo Electrónico" ngModel required/><br>
+                <input type="password" name="password" placeholder="Contraseña" ngModel required/><br>
+                <button>REGISTRARSE</button>
+            </form>
+        </div>
+        <div id="login_msg">¿Tienes una cuenta?</div>
+        <button id="login_btn" routerLink="/auth/inicio-sesion">INICIA SESIÓN</button>
+    </div>
+</body>
+<!-- Features section-->
+<section class="py-5" id="features">
+    <div class="container px-5 my-5">
+        <div class="row gx-5">
+            <div class="col-lg-4 mb-5 mb-lg-0">
+                <h2 class="fw-bolder mb-0">¿Que podrás hacer en nuestra plataforma?</h2>
+            </div>
+            <div class="col-lg-8">
+                <div class="row gx-5 row-cols-1 row-cols-md-2">
+                    <div class="col mb-5 h-100">
+                        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-collection"></i></div>
+                        <h2 class="h5">Control de Personal</h2>
+                        <p class="mb-0">Lleva el control del registro de docentes y estudiantes.</p>
+                    </div>
+                    <div class="col mb-5 h-100">
+                        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-building"></i></div>
+                        <h2 class="h5">Control Académico</h2>
+                        <p class="mb-0">Lleva el control del registro de sedes, facultades, cursos y secciones.</p>
+                    </div>
+                    <div class="col mb-5 mb-md-0 h-100">
+                        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-toggles2"></i></div>
+                        <h2 class="h5">Control de Notas</h2>
+                        <p class="mb-0">Lleva el control del registro de actividades y calificaciones.</p>
+                    </div>
+                    <div class="col h-100">
+                        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-toggles2"></i></div>
+                        <h2 class="h5">Administración</h2>
+                        <p class="mb-0">Lleva el control del registro de usuarios y roles.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Testimonial section-->
+<div class="py-5 bg-light">
+    <div class="container px-5 my-5">
+        <div class="row gx-5 justify-content-center">
+            <div class="col-lg-10 col-xl-7">
+                <div class="text-center">
+                    <div class="fs-4 mb-4 fst-italic">"Las ganas de aprender deben hacer volar nuestra mente y aterrizarnos en el cumplimiento de nuestros sueños."</div>
+                    <div class="d-flex align-items-center justify-content-center">
+                        <img class="rounded-circle me-3" src="/assets/img/ceo.jpeg" alt="..." width="100" height="100" />
+                        <div class="fw-bold">
+                            Johan Hernández
+                            <span class="fw-bold text-primary mx-1">/</span> CEO, EDUCATECH
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer-->
+<footer class="bg-dark py-4 mt-auto">
+    <div class="container px-5">
+        <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+            <div class="col-auto">
+                <div class="small m-0 text-white">Copyright &copy; EDUCATECH</div>
+            </div>
+            <div class="col-auto">
+                <a class="link-light small" href="#!">Privacidad</a>
+                <span class="text-white mx-1">&middot;</span>
+                <a class="link-light small" href="#!">Términos</a>
+                <span class="text-white mx-1">&middot;</span>
+                <a class="link-light small" href="#!">Contacto</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</html>
